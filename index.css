@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    overflow-x: hidden;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5) url("./img/norris03.jpeg");
+    background-blend-mode: multiply;
+    color: white;
+    font-size: 30px;
+    background-attachment: fixed;
+    background-size: 50vw;
+
+}
+.button{
+    position: absolute;
+    top: 20vh;
+    border-color: #ffffff;
+    border-width: 2px;
+    background-color: #737373;
+    border-style: solid;
+    width: 28vw;
+    font-size: 22px;
+    padding: 3px;
+    user-select: none;
+}
+.button:hover{
+    cursor: pointer;
+}
+#erg{
+    position: absolute;
+    top: 35vh;
+    text-align: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
