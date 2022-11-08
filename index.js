@@ -1,15 +1,8 @@
-    let timeToReset = 0;
-
-    let selectedType = document.getElementById('selection')
-
     function loadChuckJoke() {
+        let selectedType = document.getElementById('selection').value;
         let erg = document.getElementById('erg');
         let xhttp = new XMLHttpRequest();
-        if (timeToReset > 2){
-            timeToReset = 0;
             erg.innerHTML = '';
-        }
-        ++timeToReset
 
         xhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
@@ -23,6 +16,10 @@
             }
 
         }
-            xhttp.open("GET", "https://api.chucknorris.io/jokes/" + selectedType, true);
+            if (selectedType === 'random'){
+                xhttp.open("GET", "https://api.chucknorris.io/jokes/random", true);
+            } else {
+                xhttp.open("GET", "https://api.chucknorris.io/jokes/random?category="  + selectedType, true);
+            }
             xhttp.send();
     }
