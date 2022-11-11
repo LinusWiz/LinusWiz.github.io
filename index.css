@@ -8,7 +8,7 @@ body{
     color: white;
     font-size: 30px;
     background-attachment: fixed;
-    background-size: 100vw;
+    background-size: cover;
 }
 .button{
     grid-row: 1;
