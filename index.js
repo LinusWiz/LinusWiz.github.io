@@ -1,5 +1,17 @@
 let lastJoke = "null";
 let joke = 0;
+let jokeCounter = 0;
+
+function switchToNextJoke(){
+    ++jokeCounter;
+    loadSearchJoke()
+}
+function switchToLastJoke(){
+    if (jokeCounter > 0){
+        --jokeCounter;
+        loadSearchJoke()
+    }
+}
 
 function loadChuckJoke() {
         let selectedType = document.getElementById('selection').value;
@@ -13,10 +25,9 @@ function loadChuckJoke() {
                 joke = JSON.parse( this.responseText );
                 if (joke.value === lastJoke) {
                     loadChuckJoke();
-                    return;
                 }
                 lastJoke = joke.value;
-                console.log("Die Antwort ist da");
+                console.log("answer.categoryJoke");
                 console.log(joke);
 
                 erg.innerHTML +=
@@ -30,4 +41,32 @@ function loadChuckJoke() {
                 xhttp.open("GET", "https://api.chucknorris.io/jokes/random?category="  + selectedType, true);
             }
             xhttp.send();
+    }
+
+function loadSearchJoke() {
+
+    let searchedThing = document.getElementById('inputSearch').value;
+    let erg = document.getElementById('erg');
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+
+            joke = JSON.parse( this.responseText );
+
+            lastJoke = joke.value;
+            console.log("answer.loadSearch");
+            console.log(joke);
+            console.log(joke.value);
+
+
+            if (joke.result.length != 0 && joke.result.length > jokeCounter){
+                erg.innerHTML = '<h3>' + joke.result[jokeCounter].value + '</h3>'
+            }
+
+        }
+
+    }
+        xhttp.open("GET", "https://api.chucknorris.io/jokes/search?query=" + searchedThing, true);
+        xhttp.send();
     }
