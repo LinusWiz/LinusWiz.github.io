@@ -6,30 +6,30 @@ body{
     text-align: center;
     background-image:url("./img/norris03.jpg");
     color: white;
-    font-size: 30px;
+    font-size: 2vw;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw;
     font-family: Arial;
 }
 .button{
     border-width: 2px;
     border-style: solid;
     width: 10vw;
-    font-size: 22px;
+    padding-top: 0.5vw;
+    height: 2.2vw;
     user-select: none;
     align-items: center;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.5);
     border-color: rgb(0, 0, 0, 0.5);
-    padding-top: 1.15vh;
-    height: 4.15vh;
+    font-size: 1.5vw;
 }
 .button:hover{
     cursor: pointer;
 }
 #innerMotherElement{
     position: absolute;
-    top: 20vh;
+    top: 10vw;
     width: 100vw;
     display: grid;
     grid-template-rows: 15vh;
@@ -42,33 +42,35 @@ body{
 #selection{
     align-items: center;
     justify-content: center;
-    height: 5vh;
-    width: 10vw;
+    height: 3vw;
+    width: 10.1vw;
     grid-row: 3;
     grid-column: 3;
     text-align: center;
+    font-size: 1vw;
 }
 #inputSearch{
     align-items: center;
     justify-content: center;
-    height: 5vh;
+    height: 2.625vw;
     width: 10vw;
     grid-row: 1;
     grid-column: 4;
     text-align: center;
     margin-left: -0.12vw;
+    font-size: 1vw;
 }
 #mother-element{
     position: absolute;
-    top: 10vh;
+    top: 7vw;
     width: 100vw;
     display: grid;
-    grid-template-rows: 5vh 5vh 1vh 5vh;
+    grid-template-rows: 3vw 3vw 2vw 3vw;
     grid-template-columns: 20vw 25vw 10vw 45vw;
 }
 #mother-element2{
     position: absolute;
-    top: 15vh;
+    top: 10vw;
     width: 100vw;
     display: grid;
     grid-template-rows: 5vh;
@@ -83,8 +85,6 @@ body{
     grid-column: 2;
 }
 #button1{
-    padding: 3px;
-    width: 9.3vw;
     grid-row: 2;
     grid-column: 3;
 }

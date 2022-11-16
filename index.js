@@ -4,12 +4,13 @@ let jokeCounter = 0;
 
 function switchToNextJoke(){
     ++jokeCounter;
-    loadSearchJoke()
+    wordChecker()
 }
 function switchToLastJoke(){
+    console.log(jokeCounter);
     if (jokeCounter > 0){
         --jokeCounter;
-        loadSearchJoke()
+        wordChecker()
     }
 }
 
@@ -44,8 +45,8 @@ function loadChuckJoke() {
     }
 
 function loadSearchJoke() {
-
-    let searchedThing = document.getElementById('inputSearch').value;
+    let searchedThing = " "
+    searchedThing += document.getElementById('inputSearch').value;
     let erg = document.getElementById('erg');
     let xhttp = new XMLHttpRequest();
 
@@ -62,6 +63,8 @@ function loadSearchJoke() {
 
             if (joke.result.length != 0 && joke.result.length > jokeCounter){
                 erg.innerHTML = '<h3>' + joke.result[jokeCounter].value + '</h3>'
+            } else {
+                erg.innerHTML = '<h3>There is no joke with this word._.</h3>'
             }
 
         }
@@ -70,3 +73,28 @@ function loadSearchJoke() {
         xhttp.open("GET", "https://api.chucknorris.io/jokes/search?query=" + searchedThing, true);
         xhttp.send();
     }
+
+
+
+function wordChecker() {
+    searchedThing = document.getElementById('inputSearch').value;
+    let erg = document.getElementById('erg');
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.onreadystatechange = function () {
+        if ((this.readyState == 4 && this.status == 200) || (searchedThing == 'norris' || searchedThing == 'Norris')) {
+
+            wordDef = JSON.parse( this.responseText );
+
+            console.log("answer.wordChecker");
+            console.log(joke);
+            console.log(joke.value);
+            loadSearchJoke();
+        } else if (this.status == 404) {
+            erg.innerHTML = '<h3>Sorry, this word does not exist._.</h3>'
+        }
+
+    }
+    xhttp.open("GET", "https://api.dictionaryapi.dev/api/v2/entries/en/" + document.getElementById('inputSearch').value, true);
+    xhttp.send();
+}
