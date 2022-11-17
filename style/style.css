@@ -1,0 +1,109 @@
+body {
+	background-attachment : fixed;
+	background-image      : url("../img/Backgound.jpg");
+	background-size       : 100vw;
+	color                 : white;
+	font-family           : Arial, sans-serif;
+	font-size             : 2vw;
+	margin                : 0;
+	overflow-x            : hidden;
+	padding               : 0;
+	text-align            : center;
+	top                   : 0;
+}
+
+.navButton {
+	align-items      : center;
+	background-color : rgba(0, 0, 0, 0.5);
+	border-color     : rgb(0, 0, 0, 0.5);
+	border-style     : solid;
+	border-width     : 2px;
+	color            : white;
+	cursor           : pointer;
+	font-size        : 1.5vw;
+	height           : 2.2vw;
+	justify-content  : center;
+	padding-top      : 0.5vw;
+	text-decoration  : none;
+	user-select      : none;
+	width            : 10vw;
+}
+
+nav {
+	display        : flex;
+	flex-direction : column;
+	left           : 0;
+	position       : absolute;
+	top            : 0;
+	width          : 10vw;
+}
+
+#resultBox {
+	display               : grid;
+	grid-template-columns : 15vw 70vw 15vw;
+	grid-template-rows    : 15vh;
+	position              : absolute;
+	top                   : 10vw;
+	width                 : 100vw;
+}
+
+#result {
+	grid-column : 2;
+	grid-row    : 1;
+}
+
+#selection {
+	align-items     : center;
+	font-size       : 1vw;
+	grid-column     : 3;
+	grid-row        : 3;
+	height          : 3vw;
+	justify-content : center;
+	text-align      : center;
+	width           : 10.1vw;
+}
+
+#inputSearch {
+	align-items     : center;
+	font-size       : 1vw;
+	grid-column     : 4;
+	grid-row        : 1;
+	height          : 2.625vw;
+	justify-content : center;
+	margin-left     : -0.12vw;
+	text-align      : center;
+	width           : 10vw;
+}
+
+#RandomPageWrapper {
+	display               : grid;
+	grid-template-columns : 20vw 25vw 10vw 45vw;
+	grid-template-rows    : 3vw 3vw 2vw 3vw;
+	position              : absolute;
+	top                   : 7vw;
+	width                 : 100vw;
+}
+
+#SearchPageWrapper {
+	display               : grid;
+	grid-template-columns : 34vw 10vw 1vw 10vw 1vw 10vw 34vw;
+	grid-template-rows    : 5vh;
+	position              : absolute;
+	top                   : 10vw;
+	width                 : 100vw;
+}
+
+#next-button {
+	grid-column : 6;
+	grid-row    : 1;
+}
+
+#last-button {
+	grid-column : 2;
+	grid-row    : 1;
+}
+
+#loadJokeButton {
+	grid-column : 3;
+	grid-row    : 2;
+}

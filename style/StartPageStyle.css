@@ -1,0 +1,60 @@
+body {
+	background-color : rgb(44, 44, 44);
+	color            : white;
+	font-family      : "Apple SD Gothic Neo", sans-serif;
+	margin           : 0;
+	overflow-x       : hidden;
+	padding          : 0;
+	text-align       : center;
+	top              : 0;
+}
+
+h1 {
+	font-size  : 50pt;
+	margin-top : 10vh;
+}
+
+#button {
+	border-color    : white;
+	border-radius   : 10px;
+	border-style    : solid;
+	border-width    : 5px;
+	color           : white;
+	font-size       : 50px;
+	height          : min-content;
+	margin-left     : 2vw;
+	padding         : 3px 7px;
+	text-decoration : none;
+	width           : 33vw;
+}
+
+#wrapper {
+	align-items   : center;
+	display       : flex;
+	margin-bottom : 5%;
+	margin-left   : 15vw;
+	width         : 70vw;
+}
+
+#TextWrapper {
+	text-align : left;
+}
+
+.mainPageText {
+	height        : min-content;
+	margin-bottom : 60px;
+	margin-left   : 2vw;
+	margin-top    : 0;
+	width         : 33vw;
+}
+
+#NorrisBanner {
+	width : 30vw;
+}
+
+h2 {
+	font-size   : xx-large;
+	margin-left : 2vw;
+	margin-top  : 0;
+	width       : 33vw;
+}
