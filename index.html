@@ -20,19 +20,59 @@
     font-size: 50pt;
   }
   #button{
-      padding: 3px;
-      padding-left: 7px;
-      padding-right: 7px;
+      padding: 3px 7px;
       font-size: 50px;
       text-decoration: none;
       color: white;
       border-style: solid;
       border-color: white;
       border-width: 5px;
+      border-radius: 10px;
+      height: min-content;
+      margin-left: 2vw;
+      width: 33vw;
   }
+  #wrapper{
+      display: flex;
+      width: 70vw;
+      margin-left: 15vw;
+  }
+  #wrapper2{
+      text-align: left;
+  }
+    .text{
+        margin-left: 2vw;
+        width: 33vw;
+        height: min-content;
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+    #norris-pic-1{
+        width: 35vw;
+    }
 </style>
 <body>
 <h1>Welcome to Chuck Norris' Git repository</h1>
-<a id="button" rel="" href="./chuckNorrisAPI.html">Start your Tour</a>
+<div id="wrapper">
+    <img id="norris-pic-1" src="./img/chuck_norris_banner.jpeg">
+    <div id="wrapper2">
+        <h2 class="text">Chuck Norris: Legende</h2>
+        <h3 class="text">
+            Chuck Norris, der mit bürgerlichem Namen Carlos Ray Norris heißt, ist vor allem durch seine Filmkarriere bekannt.
+            Vorwiegend war er in billig produzierten Actionstreifen zu sehen, in denen er den stereotypen amerikanischen Mann gab:
+            schweigsam, introvertiert, aber immer tatkräftig, wenn es darauf ankam.
+            <br><br>
+            Chuck Norris trat 1958 der US-Air-Force bei und
+            wurde nach Südkorea versetzt, wo er den Spitznamen Chuck erhielt, den er später als Künstlernamen behielt. In Südkorea hatte
+            er auch seinen ersten Kontakt mit den Kampfkünsten, namentlich Tang Soo Do.
+            <br><br>
+            Nach Ende seiner militärischen Dienstzeit 1962 konzentrierte er sich verstärkt auf die Kampfkünste und begann,
+            an Wettbewerben teilzunehmen.
+            <br><br>
+            Nach mehreren gewonnenen Wettkämpfen wurde er vom Karate-Magazin Black Belt zum "Kämpfer des Jahres" gewählt.
+            Diese Tatsache kam natürlich auch Bruce Lee zu Ohren.</h3>
+        <a id="button" rel="" href="./chuckNorrisAPI.html">Start your Tour</a>
+    </div>
+</div>
 </body>
 </html>
