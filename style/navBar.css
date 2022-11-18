@@ -3,13 +3,39 @@ nav {
 	border-bottom    : #353337 solid 2px;
 	border-right     : #353337 solid 2px;
 	border-top       : #353337 solid 2px;
+	box-sizing       : border-box;
 	color            : white;
-	display          : grid;
+	display          : flex;
+	flex-direction   : column;
 	height           : 100%;
-	left             : 0;
-	position         : absolute;
+	justify-content  : space-around;
+	margin           : 0;
+	padding          : 2vh;
 	text-decoration  : none;
-	top              : 239px;
-	width            : 15vw;
+	width            : 20vw;
 	z-index          : 999;
+}
+
+.navRow {
+	box-sizing     : border-box;
+	display        : flex;
+	flex-direction : row;
+	height         : 5vh;
+	width          : 100%;
+
+}
+
+.navRow a {
+	box-sizing      : border-box;
+	color           : white;
+	height          : min-content;
+	margin-right    : 6%;
+	text-decoration : none;
+	width           : 77%;
+
+}
+
+.navRow img {
+	color : white;
+	width : 17%;
 }
