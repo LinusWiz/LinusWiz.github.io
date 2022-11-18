@@ -1,6 +1,6 @@
 body {
 	background-attachment : fixed;
-	background-image      : url("../img/Backgound.jpg");
+	background-image      : url('../img/Backgound.jpg');
 	background-size       : 100vw;
 	color                 : white;
 	font-family           : Arial, sans-serif;

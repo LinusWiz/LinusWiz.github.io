@@ -1,0 +1,14 @@
+nav {
+	background-color : #232023;
+	border-bottom    : #353337 solid 2px;
+	border-right     : #353337 solid 2px;
+	border-top       : #353337 solid 2px;
+	color            : white;
+	display          : grid;
+	height           : 100%;
+	left             : 0;
+	position         : absolute;
+	text-decoration  : none;
+	top              : 239px;
+	width            : 15vw;
+}
