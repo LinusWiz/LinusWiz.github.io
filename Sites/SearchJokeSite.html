@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="Chuck Norris API Search Joke Page" name="description">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<title>Search</title>
+	<link href="../style/style.css" rel="stylesheet" type="text/css">
+	<script defer src="../js/script.js"></script>
+</head>
+
+<body>
+<nav>
+	<a class="navButton" href="../index.html">Start</a>
+	<a class="navButton" href="./RandomJokeSite.html">Random Joke</a>
+</nav>
+<div id="SearchPageWrapper">
+
+	<label for="inputSearch"></label>
+	<input id="inputSearch" onchange="wordChecker()" placeholder="Chuck">
+	<div class="navButton" id="next-button" onclick="switchToDifferentJoke('right')">Next</div>
+	<div class="navButton" id="last-button" onclick="switchToDifferentJoke('left')">Last</div>
+
+	<div id="resultBox">
+		<div id="result"></div>
+	</div>
+</div>
+</body>
+</html>

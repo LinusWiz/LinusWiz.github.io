@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=10.0, minimum-scale=1.0"
+	      name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<meta content="Chuck Norris API Random Joke Page" name="description">
+	<title>Chuck Norris</title>
+	<link href="../style/style.css" rel="stylesheet" type="text/css">
+	<script defer src="../js/script.js"></script>
+</head>
+<body>
+
+<nav>
+	<a class="navButton" href="../index.html">Start</a>
+	<a class="navButton" href="./SearchJokeSite.html" id="linkToSearchPage">Search Mode</a>
+</nav>
+
+<div id="RandomPageWrapper">
+	<div class="navButton" id="loadJokeButton" onclick="loadChuckJoke()">Jokes on you</div>
+
+	<label for="selection"></label>
+	<select id="selection">
+		<option>random</option>
+		<option>animal</option>
+		<option>career</option>
+		<option>celebrity</option>
+		<option>dev</option>
+		<option>explicit</option>
+		<option>fashion</option>
+		<option>food</option>
+		<option>history</option>
+		<option>money</option>
+		<option>movie</option>
+		<option>music</option>
+		<option>political</option>
+		<option>religion</option>
+		<option>science</option>
+		<option>sport</option>
+		<option>travel</option>
+	</select>
+	<div id="resultBox">
+		<div id="result"></div>
+	</div>
+</div>
+</body>
+</html>
