@@ -11,4 +11,5 @@ nav {
 	text-decoration  : none;
 	top              : 239px;
 	width            : 15vw;
+	z-index          : 999;
 }
