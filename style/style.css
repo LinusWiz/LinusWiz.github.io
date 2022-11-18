@@ -12,7 +12,7 @@ body {
 	top                   : 0;
 }
 
-.navButton {
+.button {
 	align-items      : center;
 	background-color : rgba(0, 0, 0, 0.5);
 	border-color     : rgb(0, 0, 0, 0.5);
