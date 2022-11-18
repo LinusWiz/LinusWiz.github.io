@@ -49,7 +49,7 @@ function loadChuckJoke() {
 }
 
 function loadSearchJoke() {
-	let searchQuery = document.getElementById('inputSearch').value;
+	let searchQuery = ' ' + document.getElementById('inputSearch').value;
 	let result = document.getElementById('result');
 	let xhttp = new XMLHttpRequest();
 
@@ -89,9 +89,6 @@ function wordChecker() {
 
 	xhttp.onreadystatechange = function() {
 		if ((this.readyState === 4 && this.status === 200) || (searchQuery === 'norris' || searchQuery === 'Norris')) {
-
-			let wordDefinition = JSON.parse(this.responseText);
-
 			console.log('answer.wordChecker');
 			console.log(joke);
 			console.log(joke.value);
