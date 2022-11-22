@@ -14,19 +14,17 @@
 </head>
 <body>
 
-<nav>
-	<div class="navRow">
-		<a href="../index.html">Start</a>
-		<img alt="arrow" src="../img/Icons/arrow.png">
-	</div>
-	<div class="navRow">
-		<a href="./RandomJokeSite.html">Random Joke</a>
-		<img alt="arrow" src="../img/Icons/arrow.png">
-	</div>
-	<div class="navRow">
-		<a href="./SearchJokeSite.html">Search Mode</a>
-		<img alt="arrow" src="../img/Icons/arrow.png">
-	</div>
+<nav class="menu">
+	<input id="menu__toggle" type="checkbox"/>
+	<label class="menu__btn" for="menu__toggle">
+		<span></span>
+	</label>
+
+	<ul class="menu__box">
+		<li><a class="menu__item neon" href="../index.html">HOME</a></li>
+		<li><a class="menu__item neon" href="./RandomJokeSite.html">RANDOM JOKE</a></li>
+		<li><a class="menu__item neon" href="./SearchJokeSite.html">SEARCH JOKE</a></li>
+	</ul>
 </nav>
 
 <div id="RandomPageWrapper">
