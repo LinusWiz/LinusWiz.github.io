@@ -52,7 +52,7 @@
 }
 
 .menu__box {
-	background-color: rgba(119, 17, 25, 0.92);
+	background-color: rgba(45, 42, 46, 0.87);
 	box-shadow          : 2px 2px 6px rgba(0, 0, 0, .4);
 	display             : block;
 	height              : 100%;
@@ -82,7 +82,7 @@
 
 .menu__item::before,
 .menu__item::after {
-	background-color: #1E1E48;
+	background-color: #426C8C;
 	content          : "";
 	height           : 2px;
 	left             : 0;
