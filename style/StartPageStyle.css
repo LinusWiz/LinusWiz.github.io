@@ -16,21 +16,6 @@ h1 {
 	margin-top : 10vh;
 }
 
-#button {
-	border-color    : white;
-	border-radius   : 10px;
-	border-style    : solid;
-	border-width    : 5px;
-	box-sizing      : border-box;
-	color           : white;
-	font-size       : 50px;
-	height          : min-content;
-	margin-left     : 2vw;
-	padding         : 3px 7px;
-	text-decoration : none;
-	width           : 33vw;
-}
-
 #wrapper {
 	align-items   : start;
 	display       : flex;

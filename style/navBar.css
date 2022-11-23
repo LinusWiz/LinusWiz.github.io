@@ -106,3 +106,8 @@
 .menu__item:hover::after {
 	transform : scaleX(1);
 }
+#current__item{
+	border: solid 2px #426C8C;
+	border-right:none 0;
+	border-left: none 0;
+}

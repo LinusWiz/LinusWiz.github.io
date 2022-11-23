@@ -52,17 +52,12 @@ function loadSearchJoke() {
 	let searchQuery = ' ' + document.getElementById('inputSearch').value;
 	let result = document.getElementById('result');
 	let xhttp = new XMLHttpRequest();
-
+	result.innerHTML = '';
 	xhttp.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 
 			joke = JSON.parse(this.responseText);
 
-			if (joke.value === previous) {
-				loadSearchJoke();
-			}
-
-			previous = joke.value;
 			console.log('answer.loadSearch');
 			console.log(joke);
 			console.log(joke.value);
