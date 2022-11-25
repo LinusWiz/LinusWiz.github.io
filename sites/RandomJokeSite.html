@@ -22,34 +22,35 @@
 
 	<ul class="menu__box">
 		<li><a class="menu__item" href="../index.html">HOME</a></li>
-		<li><a id="current__item" class="menu__item" href="./RandomJokeSite.html">RANDOM JOKE</a></li>
+		<li><a class="menu__item" href="./RandomJokeSite.html" id="current__item">RANDOM JOKE</a></li>
 		<li><a class="menu__item" href="./SearchJokeSite.html">SEARCH JOKE</a></li>
 	</ul>
 </nav>
 
-<div id="RandomPageWrapper">
-	<div class="button" id="loadJokeButton" onclick="loadChuckJoke()">Jokes on you</div>
-
-	<label for="selection"></label>
-	<select id="selection">
-		<option>random</option>
-		<option>animal</option>
-		<option>career</option>
-		<option>celebrity</option>
-		<option>dev</option>
-		<option>explicit</option>
-		<option>fashion</option>
-		<option>food</option>
-		<option>history</option>
-		<option>money</option>
-		<option>movie</option>
-		<option>music</option>
-		<option>political</option>
-		<option>religion</option>
-		<option>science</option>
-		<option>sport</option>
-		<option>travel</option>
-	</select>
+<div class="RandomPageWrapper">
+	<div class="input">
+		<div class="button jokeButton" id="loadJokeButton" onclick="loadChuckJoke()">Jokes on you</div>
+		<label for="selection"></label>
+		<select id="selection" class="button">
+			<option>random</option>
+			<option>animal</option>
+			<option>career</option>
+			<option>celebrity</option>
+			<option>dev</option>
+			<option>explicit</option>
+			<option>fashion</option>
+			<option>food</option>
+			<option>history</option>
+			<option>money</option>
+			<option>movie</option>
+			<option>music</option>
+			<option>political</option>
+			<option>religion</option>
+			<option>science</option>
+			<option>sport</option>
+			<option>travel</option>
+		</select>
+	</div>
 	<div id="resultBox">
 		<div id="result"></div>
 	</div>

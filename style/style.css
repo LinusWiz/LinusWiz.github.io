@@ -4,17 +4,16 @@
 }
 
 body {
-	background-attachment : fixed;
-	background-image      : url('../img/Backgound.jpg');
-	background-size       : 100vw;
-	color                 : white;
-	font-family           : Arial, sans-serif;
-	font-size             : 2vw;
-	margin                : 0;
-	overflow-x            : hidden;
-	padding               : 0;
-	text-align            : center;
-	top                   : 0;
+	background      : url("../img/background.png") fixed;
+	background-size : 100vw;
+	color           : white;
+	font-family     : Arial, sans-serif;
+	font-size       : 2vw;
+	margin          : 0;
+	overflow-x      : hidden;
+	padding         : 0;
+	text-align      : center;
+	top             : 0;
 }
 
 .button {
@@ -44,17 +43,10 @@ nav {
 }
 
 #resultBox {
-	display               : grid;
-	grid-template-columns : 15vw 70vw 15vw;
-	grid-template-rows    : 15vh;
-	position              : absolute;
-	top                   : 10vw;
-	width                 : 100vw;
-}
-
-#result {
-	grid-column : 2;
-	grid-row    : 1;
+	margin-left : 5vw;
+	margin-top  : 5vh;
+	text-align  : start;
+	width       : 30vw;
 }
 
 #selection {
@@ -69,33 +61,26 @@ nav {
 }
 
 #inputSearch {
-	align-items     : center;
-	font-size       : 1vw;
-	grid-column     : 4;
-	grid-row        : 1;
-	height          : 2.625vw;
-	justify-content : center;
-	margin-left     : -0.12vw;
-	text-align      : center;
-	width           : 10vw;
+	align-items      : center;
+	background-color : rgba(0, 0, 0, 0.5);
+	border           : none;
+	font-size        : 1vw;
+	grid-column      : 4;
+	grid-row         : 1;
+	height           : 2.625vw;
+	justify-content  : center;
+	margin-left      : -0.12vw;
+	text-align       : center;
+	width            : 10vw;
 }
 
-#RandomPageWrapper {
-	display               : grid;
-	grid-template-columns : 20vw 25vw 10vw 45vw;
-	grid-template-rows    : 3vw 3vw 2vw 3vw;
-	position              : absolute;
-	top                   : 7vw;
-	width                 : 100vw;
-}
-
-#SearchPageWrapper {
-	display               : grid;
-	grid-template-columns : 34vw 10vw 1vw 10vw 1vw 10vw 34vw;
-	grid-template-rows    : 5vh;
-	position              : absolute;
-	top                   : 10vw;
-	width                 : 100vw;
+.RandomPageWrapper {
+	align-items    : start;
+	display        : flex;
+	flex-direction : column;
+	position       : absolute;
+	top            : 7vw;
+	width          : 100vw;
 }
 
 #next-button {
@@ -111,4 +96,52 @@ nav {
 #loadJokeButton {
 	grid-column : 3;
 	grid-row    : 2;
+}
+
+.input {
+	align-items     : center;
+	display         : flex;
+	flex-direction  : row;
+	height          : 15vh;
+	justify-content : space-between;
+	margin-left     : 5vw;
+	width           : 30vw;
+}
+
+.jokeButton {
+	color               : #FFFFFF;
+	display             : block;
+	font-size           : 20px;
+	position            : relative;
+	text-decoration     : none;
+	transition-duration : .25s;
+}
+
+.jokeButton::before,
+.jokeButton::after {
+	background-color : #426C8C;
+	content          : "";
+	height           : 2px;
+	left             : 0;
+	position         : absolute;
+	transform        : scale(0);
+	transition       : transform 0.5s;
+	width            : 100%;
+}
+
+.jokeButton::after {
+	bottom           : -.3vh;
+	left             : -.3vh;
+	transform-origin : top;
+}
+
+.jokeButton::before {
+	bottom           : -.3vh;
+	left             : -.3vh;
+	transform-origin : top;
+}
+
+.jokeButton:hover::before,
+.jokeButton:hover::after {
+	transform : scale(1);
 }

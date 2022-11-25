@@ -23,15 +23,16 @@
 	<ul class="menu__box">
 		<li><a class="menu__item" href="../index.html">HOME</a></li>
 		<li><a class="menu__item" href="./RandomJokeSite.html">RANDOM JOKE</a></li>
-		<li><a id="current__item" class="menu__item" href="./SearchJokeSite.html">SEARCH JOKE</a></li>
+		<li><a class="menu__item" href="./SearchJokeSite.html" id="current__item">SEARCH JOKE</a></li>
 	</ul>
 </nav>
-<div id="SearchPageWrapper">
-
-	<label for="inputSearch"></label>
-	<input id="inputSearch" onchange="wordChecker()" placeholder="Chuck">
-	<div class="button" id="next-button" onclick="switchToDifferentJoke('right')">Next</div>
-	<div class="button" id="last-button" onclick="switchToDifferentJoke('left')">Last</div>
+<div class="RandomPageWrapper">
+	<div class="input">
+		<label for="inputSearch"></label>
+		<div class="button jokeButton" id="next-button" onclick="switchToDifferentJoke('right')">Next</div>
+		<input class="button jokeButton" id="inputSearch" onchange="wordChecker()" placeholder="Chuck">
+		<div class="button jokeButton" id="last-button" onclick="switchToDifferentJoke('left')">Last</div>
+	</div>
 
 	<div id="resultBox">
 		<div id="result"></div>
