@@ -10,7 +10,7 @@
 	<link href="../style/style.css" rel="stylesheet" type="text/css">
 	<link href="../style/fontStyle.css" rel="stylesheet">
 	<link href="../style/navBar.css" rel="stylesheet" type="text/css">
-	<script defer src="../js/script.js"></script>
+	<script defer src="../js/searchJoke.js"></script>
 </head>
 
 <body>
@@ -26,12 +26,12 @@
 		<li><a class="menu__item" href="./SearchJokeSite.html" id="current__item">SEARCH JOKE</a></li>
 	</ul>
 </nav>
-<div class="RandomPageWrapper">
-	<div class="input">
+<div class="pageWrapper">
+	<div class="input searchInput">
 		<label for="inputSearch"></label>
-		<div class="button jokeButton" id="next-button" onclick="switchToDifferentJoke('right')">Next</div>
-		<input class="button jokeButton" id="inputSearch" onchange="wordChecker()" placeholder="Chuck">
-		<div class="button jokeButton" id="last-button" onclick="switchToDifferentJoke('left')">Last</div>
+		<div class="button jokeButton" id="lastJokeButton" onclick="switchToDifferentJoke('left')">Last</div>
+		<input class="button jokeButton" id="inputSearch" onchange="loadSearchJoke(true)" placeholder="Chuck">
+		<div class="button jokeButton" id="nextJokeButton" onclick="switchToDifferentJoke('right')">Next</div>
 	</div>
 
 	<div id="resultBox">
