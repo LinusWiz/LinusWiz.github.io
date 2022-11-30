@@ -1,0 +1,50 @@
+@media only screen and (max-width : 800px) {
+
+	body {
+		background-color : rgb(44, 44, 44);
+		color            : white;
+		overflow-x       : hidden;
+		text-align       : center;
+		top              : 0;
+	}
+
+	h1 {
+		font-size   : 60pt;
+		margin-left : 2.5vw;
+		margin-top  : 10vh;
+		width       : 95vw;
+	}
+
+	#wrapper {
+		align-items    : start;
+		display        : flex;
+		flex-direction : column;
+		margin-bottom  : 5%;
+		margin-left    : 10vw;
+		margin-top     : 2vh;
+		width          : 80vw;
+	}
+
+	#textWrapper {
+		text-align : left;
+	}
+
+	.mainPageText {
+		height     : min-content;
+		margin-top : 5vw;
+		text-align : left;
+		width      : 80vw;
+	}
+
+	#norrisBanner {
+		top   : 0;
+		width : 80vw;
+	}
+	h3{
+		font-size: 5vw;
+	}
+
+	h2 {
+		font-size : 11vw;
+	}
+}

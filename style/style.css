@@ -3,158 +3,7 @@
 	padding : 0;
 }
 
-body {
-	background-attachment : fixed;
-	background-image      : url(../img/background.png), linear-gradient(90deg, rgb(6, 4, 7) 3%, rgb(27, 5, 57) 37%, rgba(27, 15, 94, 1) 55%, rgb(6, 2, 50) 100%);
-	background-repeat     : no-repeat;
-	background-size       : 100vw;
-	color                 : white;
-	font-family           : Arial, sans-serif;
-	font-size             : 2vw;
-	margin                : 0;
-	padding               : 0;
-	text-align            : center;
-	top                   : 0;
-}
-
-.button {
-	align-items      : center;
-	background-color : rgba(0, 0, 0, 0.5);
-	border-color     : rgb(0, 0, 0, 0.5);
-	border-style     : solid;
-	border-width     : 2px;
-	color            : white;
-	cursor           : pointer;
-	font-size        : 1.5vw;
-	height           : 2.2vw;
-	justify-content  : center;
-	padding-top      : 0.5vw;
-	text-decoration  : none;
-	user-select      : none;
-	width            : 10vw;
-}
-
-nav {
-	display        : flex;
-	flex-direction : column;
-	left           : 0;
-	position       : absolute;
-	top            : 0;
-	width          : 10vw;
-}
-
-#resultBox {
-	margin-bottom : 5vh;
-	margin-left   : 5vw;
-	margin-top    : 5vh;
-	text-align    : start;
-	width         : 30vw;
-}
-
-#selection {
-	align-items     : center;
-	font-size       : 1vw;
-	grid-column     : 3;
-	grid-row        : 3;
-	height          : 3vw;
-	justify-content : center;
-	text-align      : center;
-	width           : 10.1vw;
-}
-
-#inputSearch {
-	align-items      : center;
-	background-color : rgba(0, 0, 0, 0.5);
-	border           : none;
-	font-size        : 1vw;
-	grid-column      : 4;
-	grid-row         : 1;
-	height           : 2.625vw;
-	justify-content  : center;
-	margin-left      : -0.12vw;
-	text-align       : center;
-	width            : 10vw;
-}
-
-.pageWrapper {
-	align-items    : start;
-	display        : flex;
-	flex-direction : column;
-	position       : absolute;
-	top            : 7vw;
-	width          : 100vw;
-}
-
-#nextJokeButton {
-	grid-column : 6;
-	grid-row    : 1;
-}
-
-#lastJokeButton {
-	grid-column : 2;
-	grid-row    : 1;
-}
-
-#loadJokeButton {
-	grid-column : 3;
-	grid-row    : 2;
-}
-
-.input {
-	align-items     : center;
-	display         : flex;
-	flex-direction  : row;
-	height          : 15vh;
-	justify-content : space-between;
-	margin-left     : 5vw;
-	width           : 30vw;
-}
-
-.searchInput {
-	margin-left : 0;
-	width       : 40vw;
-}
-
-.jokeButton {
-	color               : #FFFFFF;
-	display             : block;
-	font-size           : 20px;
-	position            : relative;
-	text-decoration     : none;
-	transition-duration : .25s;
-}
-
-.jokeButton::before,
-.jokeButton::after {
-	background-color : #426C8C;
-	content          : "";
-	height           : 2px;
-	left             : 0;
-	position         : absolute;
-	transform        : scale(0);
-	transition       : transform 0.5s;
-	width            : 100%;
-}
-
-.jokeButton::after {
-	bottom           : -.3vh;
-	left             : -.3vh;
-	transform-origin : top;
-}
-
-.jokeButton::before {
-	bottom           : -.3vh;
-	left             : -.3vh;
-	transform-origin : top;
-}
-
-.jokeButton:hover::before,
-.jokeButton:hover::after {
-	transform : scale(1);
-}
-
-/*SMARTPHONE STYLING*/
-@media only screen and (max-width : 800px) {
+@media only screen and (min-width : 801px) {
 	body {
 		background-attachment : fixed;
 		background-image      : url(../img/background.png), linear-gradient(90deg, rgb(6, 4, 7) 3%, rgb(27, 5, 57) 37%, rgba(27, 15, 94, 1) 55%, rgb(6, 2, 50) 100%);
@@ -164,7 +13,7 @@ nav {
 		font-family           : Arial, sans-serif;
 		font-size             : 2vw;
 		margin                : 0;
-		overflow-x            : hidden;
+		overflow              : hidden;
 		padding               : 0;
 		text-align            : center;
 		top                   : 0;
@@ -197,20 +46,28 @@ nav {
 	}
 
 	#border_under_image {
-		background : linear-gradient(260deg, rgba(5, 2, 6, 1) 0%, rgba(48, 23, 24, 1) 19%, rgba(61, 20, 27, 1) 35%, rgba(80, 4, 7, 1) 56%, rgba(99, 8, 10, 1) 77%, rgba(172, 17, 20, 1) 100%);
-		height     : 20px;
-		position   : absolute;
-		top        : 55vw;
-		width      : 100vw;
+		background-color : #5A121B;
+		height           : 20px;
+		position         : absolute;
+		top              : 55vw;
+		width            : 100vw;
+	}
+
+	#resultBox {
+		margin-left : 5vw;
+		margin-top  : 5vh;
+		text-align  : start;
+		width       : 30vw;
 	}
 
 	#selection {
 		align-items     : center;
-		font-size       : 1vw;
+		font-size       : 1.5vw;
 		grid-column     : 3;
 		grid-row        : 3;
 		height          : 3vw;
 		justify-content : center;
+		padding         : 0;
 		text-align      : center;
 		width           : 10.1vw;
 	}
@@ -219,12 +76,12 @@ nav {
 		align-items      : center;
 		background-color : rgba(0, 0, 0, 0.5);
 		border           : none;
-		font-size        : 1vw;
+		font-size        : 1.5vw;
 		grid-column      : 4;
 		grid-row         : 1;
-		height           : 2.625vw;
+		height           : 3.3vw;
 		justify-content  : center;
-		margin-left      : -0.12vw;
+		padding          : 0;
 		text-align       : center;
 		width            : 10vw;
 	}
@@ -263,6 +120,11 @@ nav {
 		width           : 30vw;
 	}
 
+	.searchInput {
+		margin-left : 0;
+		width       : 40vw;
+	}
+
 	.jokeButton {
 		color               : #FFFFFF;
 		display             : block;
@@ -275,7 +137,7 @@ nav {
 	.jokeButton::before,
 	.jokeButton::after {
 		background-color : #426C8C;
-		content          : "";
+		content          : '';
 		height           : 2px;
 		left             : 0;
 		position         : absolute;
