@@ -3,52 +3,50 @@
 	padding: 0;
 }
 
-@media only screen and (min-width : 801px) {
-	body {
-		background-color: rgb(44, 44, 44);
-		color: white;
-		overflow-x: hidden;
-		text-align: center;
-		top: 0;
-	}
+body {
+	background-color: rgb(44, 44, 44);
+	color: white;
+	overflow-x: hidden;
+	text-align: center;
+	top: 0;
+}
 
-	h1 {
-		font-size: 50pt;
-		margin-top: 10vh;
-	}
+h1 {
+	font-size: 50pt;
+	margin-top: 10vh;
+}
 
-	#wrapper {
-		align-items: start;
-		display: flex;
-		margin-bottom: 5%;
-		margin-left: 15vw;
-		margin-top: 2vh;
-		width: 70vw;
-	}
+#wrapper {
+	align-items: start;
+	display: flex;
+	margin-bottom: 5%;
+	margin-left: 15vw;
+	margin-top: 2vh;
+	width: 70vw;
+}
 
-	#textWrapper {
-		text-align: left;
-	}
+#textWrapper {
+	text-align: left;
+}
 
-	.mainPageText {
-		height: min-content;
-		margin-bottom: 60px;
-		margin-left: 2vw;
-		margin-top: 0;
-		text-align: left;
-		width: 33vw;
-		font-size: 2.5vh;
-	}
+.mainPageText {
+	height: min-content;
+	margin-bottom: 60px;
+	margin-left: 2vw;
+	margin-top: 0;
+	text-align: left;
+	width: 33vw;
+	font-size: 2.5vh;
+}
 
-	#norrisBanner {
-		top: 0;
-		width: 30vw;
-	}
+#norrisBanner {
+	top: 0;
+	width: 30vw;
+}
 
-	h2 {
-		font-size: xx-large;
-		margin-left: 2vw;
-		margin-top: 0;
-		width: 33vw;
-	}
+h2 {
+	font-size: xx-large;
+	margin-left: 2vw;
+	margin-top: 0;
+	width: 33vw;
 }
