@@ -3,7 +3,7 @@
 	body {
 		background-color : rgb(44, 44, 44);
 		color            : white;
-		overflow         : hidden;
+		overflow-x       : hidden;
 		text-align       : center;
 		top              : 0;
 	}
