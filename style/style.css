@@ -45,14 +45,6 @@
 		width          : 10vw;
 	}
 
-	#border_under_image {
-		background-color : #5A121B;
-		height           : 20px;
-		position         : absolute;
-		top              : 55vw;
-		width            : 100vw;
-	}
-
 	#resultBox {
 		margin-left : 5vw;
 		margin-top  : 5vh;
