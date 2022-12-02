@@ -1,8 +1,8 @@
 'use strict';
 
-let jokeCounter = 0;
+let jokeCounter: number = 0;
 
-function switchToDifferentJoke(direction) {
+function switchToDifferentJoke(direction: string): void {
 	if (direction === 'right') {
 		++jokeCounter;
 	} else {
@@ -14,24 +14,31 @@ function switchToDifferentJoke(direction) {
 	loadSearchJoke();
 }
 
-function loadSearchJoke(isNewQuery) {
+class joke {
+	'value': string;
+}
+
+class jokeList {
+	'result': joke[];
+}
+
+function loadSearchJoke(isNewQuery: boolean = false) {
 	if (isNewQuery) {
 		jokeCounter = 0;
 	}
 
-	let searchQuery = ' ' + document.getElementById('inputSearch').value;
-	let result = document.getElementById('result');
-	let xhttp = new XMLHttpRequest();
+	// @ts-ignore
+	let searchQuery: string = ' ' + document.getElementById('inputSearch').value;
+	let result: HTMLElement = document.getElementById('result') as HTMLElement;
+	let xhttp: XMLHttpRequest = new XMLHttpRequest();
 	result.innerHTML = '';
 	xhttp.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 
-			let joke = JSON.parse(this.responseText);
+			let joke: jokeList = JSON.parse(this.responseText);
 
 			console.log('answer.loadSearch');
 			console.log(joke);
-			console.log(joke.value);
-
 
 			if (joke.result.length !== 0 && joke.result.length > jokeCounter) {
 				result.innerHTML = '<h3>' + joke.result[jokeCounter].value + '</h3>';
