@@ -3,6 +3,7 @@ let previous = 'null';
 function loadChuckJoke() {
     let selectedType = document.getElementById('selection').value;
     let result = document.getElementById('result');
+    let resultBox = document.getElementById('resultBox');
     let xhttp = new XMLHttpRequest();
     result.innerHTML = '';
     xhttp.onreadystatechange = function () {
@@ -10,6 +11,12 @@ function loadChuckJoke() {
             let joke = JSON.parse(this.responseText);
             if (joke.value === previous) {
                 loadChuckJoke();
+            }
+            if (joke.value.length > 220) {
+                resultBox.style.overflowY = 'scroll';
+            }
+            else {
+                resultBox.style.overflowY = 'hidden';
             }
             previous = joke.value;
             console.log('answer.categoryJoke');

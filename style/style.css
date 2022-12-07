@@ -5,13 +5,13 @@
 
 @media only screen and (min-width : 801px) {
 	.background {
-		border-bottom : #202020 solid 7px;
-		left          : 0;
-		max-width     : 100%;
-		position      : absolute;
-		top           : 0;
-		user-select   : none;
-		z-index       : -1;
+		height      : 100vh;
+		left        : 0;
+		position    : absolute;
+		top         : 0;
+		user-select : none;
+		width       : 100vw;
+		z-index     : -1;
 	}
 
 	body {
@@ -19,7 +19,7 @@
 		color       : white;
 		font-family : Arial, sans-serif;
 		font-size   : 2vw;
-		height      : 150vh;
+		height      : 1000vh;
 		margin      : 0;
 		overflow    : hidden;
 		padding     : 0;
@@ -55,10 +55,25 @@
 	}
 
 	#resultBox {
-		margin-left : 5vw;
-		margin-top  : 5vh;
-		text-align  : start;
-		width       : 30vw;
+		height        : 60vh;
+		margin-left   : 5vw;
+		margin-top    : 5vh;
+		overflow-y    : hidden;
+		padding-right : 1vw;
+		text-align    : start;
+		width         : 30vw;
+	}
+
+	#resultBox::-webkit-scrollbar {
+		background-color : rgba(0, 0, 0);
+		border-radius    : 5px;
+		width            : .5vw;
+		z-index          : 0;
+	}
+
+	#resultBox::-webkit-scrollbar-thumb {
+		background    : #A9A9A9;
+		border-radius : 5px;
 	}
 
 	#selection {

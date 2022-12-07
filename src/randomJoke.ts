@@ -5,15 +5,21 @@ let previous: string = 'null';
 function loadChuckJoke(): void {
 	let selectedType: string = (document.getElementById('selection') as HTMLInputElement).value;
 	let result: HTMLElement = document.getElementById('result') as HTMLElement;
+	let resultBox: HTMLElement = document.getElementById('resultBox') as HTMLElement;
 	let xhttp: XMLHttpRequest = new XMLHttpRequest();
 	result.innerHTML = '';
-
 	xhttp.onreadystatechange = function() {
 		if (this.readyState === 4 && this.status === 200) {
 
 			let joke: joke = JSON.parse(this.responseText) as HTMLInputElement;
 			if (joke.value === previous) {
 				loadChuckJoke();
+			}
+
+			if (joke.value.length > 220) {
+				resultBox.style.overflowY = 'scroll';
+			} else {
+				resultBox.style.overflowY = 'hidden';
 			}
 
 			previous = joke.value;
