@@ -22,6 +22,7 @@ function loadSearchJoke(isNewQuery = false) {
     }
     let searchQuery = ' ' + document.getElementById('inputSearch').value;
     let result = document.getElementById('result');
+    let resultBox = document.getElementById('resultBox');
     let xhttp = new XMLHttpRequest();
     result.innerHTML = '';
     xhttp.onreadystatechange = function () {
@@ -29,6 +30,12 @@ function loadSearchJoke(isNewQuery = false) {
             let joke = JSON.parse(this.responseText);
             console.log('answer.loadSearch');
             console.log(joke);
+            if (joke.result[jokeCounter].value.length > 220) {
+                resultBox.style.overflowY = 'scroll';
+            }
+            else {
+                resultBox.style.overflowY = 'hidden';
+            }
             if (joke.result.length !== 0 && joke.result.length > jokeCounter) {
                 result.innerHTML = '<h3>' + joke.result[jokeCounter].value + '</h3>';
             }
