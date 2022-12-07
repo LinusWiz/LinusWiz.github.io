@@ -1,52 +1,78 @@
 * {
-	margin: 0;
-	padding: 0;
+	margin  : 0;
+	padding : 0;
 }
 
 body {
-	background-color: rgb(44, 44, 44);
-	color: white;
-	overflow-x: hidden;
-	text-align: center;
-	top: 0;
+	background-color : rgb(44, 44, 44);
+	color            : white;
+	overflow-x       : hidden;
+	text-align       : center;
+	top              : 0;
 }
 
 h1 {
-	font-size: 50pt;
-	margin-top: 10vh;
+	font-size  : 50pt;
+	margin-top : 10vh;
 }
 
 #wrapper {
-	align-items: start;
-	display: flex;
-	margin-bottom: 5%;
-	margin-left: 15vw;
-	margin-top: 2vh;
-	width: 70vw;
+	align-items : start;
+	display     : flex;
+	margin-left : 15vw;
+	margin-top  : 2vh;
+	width       : 70vw;
 }
 
 #textWrapper {
-	text-align: left;
+	text-align : left;
 }
 
 .mainPageText {
-	height: min-content;
-	margin-bottom: 60px;
-	margin-left: 2vw;
-	margin-top: 0;
-	text-align: left;
-	width: 33vw;
-	font-size: 2.5vh;
+	font-size     : 2.5vh;
+	height        : min-content;
+	margin-left   : 2vw;
+	margin-top    : 0;
+	text-align    : left;
+	width         : 33vw;
 }
 
 #norrisBanner {
-	top: 0;
-	width: 30vw;
+	top   : 0;
+	width : 30vw;
 }
 
 h2 {
-	font-size: xx-large;
-	margin-left: 2vw;
-	margin-top: 0;
-	width: 33vw;
+	font-size   : xx-large;
+	margin-left : 2vw;
+	margin-top  : 0;
+	width       : 33vw;
+}
+
+footer {
+	align-items      : center;
+	background-color : #202020;
+	display          : flex;
+	flex-direction   : row;
+	height           : 8vh;
+	justify-content  : space-around;
+	margin-top       : 5vh;
+}
+
+.footerLink {
+	color           : white;
+	font-size       : x-small;
+	text-decoration : underline;
+	z-index         : 9999;
+}
+
+.footerText {
+	color     : white;
+	font-size : x-small;
+	z-index   : 9999;
+}
+
+.mainPageHeader {
+	font-size     : 5vh;
+	margin-bottom : 3vh;
 }

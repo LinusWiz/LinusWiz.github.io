@@ -1,5 +1,4 @@
 @media only screen and (max-width : 800px) {
-
 	body {
 		background-color : rgb(44, 44, 44);
 		color            : white;
@@ -9,10 +8,10 @@
 	}
 
 	h1 {
-		font-size   : 60pt;
+		font-size   : 5vh;
 		margin-left : 2.5vw;
-		margin-top  : 10vh;
-		width       : 95vw;
+		margin-top  : 5vh;
+		width       : 90vw;
 	}
 
 	#wrapper {
@@ -36,6 +35,12 @@
 		width      : 80vw;
 	}
 
+	.mainPageHeader {
+		font-size  : 3.5vh;
+		margin-top : 4vh;
+		width      : auto;
+	}
+
 	#norrisBanner {
 		top   : 0;
 		width : 80vw;
@@ -47,5 +52,9 @@
 
 	h2 {
 		font-size : 11vw;
+	}
+
+	footer {
+		flex-direction : column;
 	}
 }
