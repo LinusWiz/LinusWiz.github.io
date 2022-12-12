@@ -15,17 +15,20 @@
 	}
 
 	body {
-		background  : linear-gradient(90deg, rgb(6, 4, 7) 3%, rgb(27, 5, 57) 37%, rgba(27, 15, 94, 1) 55%, rgb(6, 2, 50) 100%);
-		color       : white;
-		font-family : Arial, sans-serif;
-		font-size   : 2vw;
-		height      : 1000vh;
-		margin      : 0;
-		overflow    : hidden;
-		padding     : 0;
-		text-align  : center;
-		top         : 0;
-		z-index     : -2;
+		background-attachment : fixed;
+		background-image      : url("../img/background.webp");
+		background-repeat     : no-repeat;
+		background-size       : cover;
+		color                 : white;
+		font-family           : Arial, sans-serif;
+		font-size             : 2vw;
+		height                : 1000vh;
+		margin                : 0;
+		overflow              : hidden;
+		padding               : 0;
+		text-align            : center;
+		top                   : 0;
+		z-index               : -2;
 	}
 
 	.button {
@@ -104,7 +107,7 @@
 	}
 
 	.pageWrapper {
-		align-items    : start;
+		align-items    : center;
 		display        : flex;
 		flex-direction : column;
 		position       : absolute;
@@ -151,7 +154,6 @@
 		transition-duration : .25s;
 	}
 
-	.jokeButton::before,
 	.jokeButton::after {
 		background-color : #426C8C;
 		content          : "";
@@ -164,18 +166,12 @@
 	}
 
 	.jokeButton::after {
-		bottom           : -.3vh;
-		left             : -.3vh;
+		bottom           : -.4vh;
+		left             : -.1vw;
 		transform-origin : top;
+		width            : 102%;
 	}
 
-	.jokeButton::before {
-		bottom           : -.3vh;
-		left             : -.3vh;
-		transform-origin : top;
-	}
-
-	.jokeButton:hover::before,
 	.jokeButton:hover::after {
 		transform : scale(1);
 	}
