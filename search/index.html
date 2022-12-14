@@ -29,11 +29,25 @@
 	</ul>
 </nav>
 <div class="pageWrapper">
-	<div class="input searchInput">
-		<label for="inputSearch"></label>
-		<div class="button jokeButton" id="lastJokeButton" onclick="switchToDifferentJoke('left')">Last</div>
-		<input class="button jokeButton" id="inputSearch" onchange="loadSearchJoke(true)" placeholder="Chuck">
-		<div class="button jokeButton" id="nextJokeButton" onclick="switchToDifferentJoke('right')">Next</div>
+
+	<!--	Responsive HTML CSS-->
+	<div class="input searchInput mobile">
+		<div class="buttons">
+			<div class="button jokeButton nextJokeButton" onclick="switchToDifferentJoke('right')">Next</div>
+			<div class="button jokeButton lastJokeButton" onclick="switchToDifferentJoke('left')">Last</div>
+		</div>
+		<label>
+			<input class="button jokeButton inputSearch" onchange="loadSearchJoke(true)" placeholder="Chuck">
+		</label>
+	</div>
+
+	<!--	Responsive HTML PC-->
+	<div class="input searchInput pc">
+		<div class="button jokeButton lastJokeButton" onclick="switchToDifferentJoke('left')">Last</div>
+		<label>
+			<input class="button jokeButton inputSearch" onchange="loadSearchJoke(true)" placeholder="Chuck">
+		</label>
+		<div class="button jokeButton nextJokeButton" onclick="switchToDifferentJoke('right')">Next</div>
 	</div>
 
 	<div id="resultBox">

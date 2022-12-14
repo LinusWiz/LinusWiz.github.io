@@ -1,7 +1,19 @@
 /*SMARTPHONE STYLING*/
 @media only screen and (max-width : 800px) {
+	.flex {
+		display : flex;
+	}
+
+	.pc {
+		display : none;
+	}
+
+	.mobile {
+		display : flex;
+	}
+
 	body {
-		background-image : linear-gradient(90deg, rgb(6, 4, 7) 3%, rgb(27, 5, 57) 37%, rgba(27, 15, 94, 1) 55%, rgb(6, 2, 50) 100%);
+		background-color : #2C2C2C;
 		color            : white;
 		font-family      : Arial, sans-serif;
 		font-size        : 2vw;
@@ -40,7 +52,7 @@
 		width       : 100vw;
 	}
 
-	#inputSearch {
+	.inputSearch {
 		align-items     : center;
 		border          : none;
 		color           : black;
@@ -54,37 +66,26 @@
 		width           : 100vw;
 	}
 
-	#nextJokeButton {
-		grid-column : 2;
-		grid-row    : 3;
-	}
-
-	#lastJokeButton {
-		grid-column : 1;
-		grid-row    : 3;
+	.buttons {
+		display         : flex;
+		flex-direction  : row-reverse;
+		justify-content : space-around;
 	}
 
 	#loadJokeButton {
-		grid-column : 1;
-		grid-row    : 3;
-		height      : 5vh;
-		margin      : 0;
-		text-align  : center;
-		width       : 100vw;
+		margin     : 0;
+		text-align : center;
+		width      : 100vw;
 	}
 
 	.input {
-		align-items           : center;
-		background-color      : rgba(0, 0, 0, 0.5);
-		bottom                : 0;
-		display               : grid;
-		font-size             : 13vw;
-		grid-column           : 1;
-		grid-row              : 2;
-		grid-template-columns : 50vw 50vw;
-		grid-template-rows    : 15vw 1.2vw 15vw;
-		position              : absolute;
-		width                 : 100vw;
+		align-items      : center;
+		background-color : rgba(0, 0, 0, 0.5);
+		bottom           : 0;
+		flex-direction   : column-reverse;
+		font-size        : 13vw;
+		position         : absolute;
+		width            : 100vw;
 	}
 
 	.input:hover, #selection:hover {
@@ -98,6 +99,10 @@
 		grid-template-rows    : 120vw 31.2vw;
 		position              : absolute;
 		width                 : 100vw;
+	}
+
+	.lastJokeButton, .nextJokeButton {
+		width : 50vw;
 	}
 
 	.jokeButton {
