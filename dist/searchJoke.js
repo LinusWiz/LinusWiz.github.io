@@ -20,7 +20,11 @@ function loadSearchJoke(isNewQuery = false) {
     if (isNewQuery) {
         jokeCounter = 0;
     }
-    let searchQuery = ' ' + document.getElementById('inputSearch').value;
+    let index = 0;
+    if (screen.width > 800) {
+        index = 1;
+    }
+    let searchQuery = ' ' + document.getElementsByClassName('inputSearch')[index].value;
     let result = document.getElementById('result');
     let resultBox = document.getElementById('resultBox');
     let xhttp = new XMLHttpRequest();

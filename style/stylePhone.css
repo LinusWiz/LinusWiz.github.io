@@ -78,6 +78,26 @@
 		width      : 100vw;
 	}
 
+	.titleBar {
+		align-items      : center;
+		background-color : #426C8C;
+		display          : flex;
+		flex-direction   : row;
+		font-size        : 4vh;
+		justify-content  : center;
+		margin           : 0;
+		padding          : .2vh;
+		width            : 100vw;
+	}
+
+	.titleBar nav {
+		width : 20vw;
+	}
+
+	.title {
+		width : 80vw;
+	}
+
 	.input {
 		align-items      : center;
 		background-color : rgba(0, 0, 0, 0.5);
@@ -106,7 +126,6 @@
 	}
 
 	.jokeButton {
-		color               : #FFFFFF;
 		display             : block;
 		position            : relative;
 		text-decoration     : none;

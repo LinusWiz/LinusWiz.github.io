@@ -25,9 +25,15 @@
 	height   : 26px;
 	left     : 20px;
 	position : fixed;
-	top      : 20px;
+	top      : 32px;
 	width    : 26px;
 	z-index  : 30;
+}
+
+@media only screen and (max-width : 800px) {
+	.menu__btn {
+		top : 24px;
+	}
 }
 
 .menu__btn > span,
@@ -105,4 +111,24 @@
 .menu__item:hover::before,
 .menu__item:hover::after {
 	transform : scaleX(1);
+}
+
+.titleBar {
+	align-items      : center;
+	background-color : #426C8C;
+	display          : flex;
+	flex-direction   : row;
+	font-size        : 5vh;
+	justify-content  : center;
+	margin           : 0;
+	padding          : 1vh;
+	width            : 100vw;
+}
+
+.titleBar nav {
+	width : 0;
+}
+
+.title {
+	width : 80vw;
 }

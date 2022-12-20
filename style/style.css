@@ -186,6 +186,14 @@
 	.jokeButton:hover::after {
 		transform : scale(1);
 	}
+
+	.titleBar nav {
+		width : 20vw;
+	}
+
+	.title {
+		width : 80vw;
+	}
 }
 
 @media only screen and (max-width : 1024px) {
